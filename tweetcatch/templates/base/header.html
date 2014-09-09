@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{# <link rel = "stylesheet" href = "style.css"/>                                     need to create CSS #}
+	<meta charset = "UTF-8">
+	<title>{% block title %}TweetCatch | {{ page_name }}{% endblock %}</title>                  {# Giving blockname is key #}
+	<h1>FW Prototype Tweet Catcher</h1>
+	<p>
+	<hr>
+	{% if user %}
+		<h2>Welcome {{ user }}! <a href = "{{ url|safe }}">click here to {{ url_linktext }}</a> </h2>
+	{% else %}
+		<h2>Welcome! Please sign in: <a href = "{{ url|safe }}">click here</a></h2>
+		{% endif %}
+	<hr>
+	</p>
+
