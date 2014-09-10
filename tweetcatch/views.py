@@ -32,7 +32,8 @@ def home(request):
     page_name = 'Home'
     view = __name__ + '.' + page_name
     print(request.get_host())
-    print('hello!!!')
+    print('hello!!!!!')
+    print('goodbye!!!!!')
 
     template_values = return_template_values(path)
     template_values.update({'page_name': page_name.lower,
